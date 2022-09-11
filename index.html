@@ -1,0 +1,186 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Music Production Survey Form</h1>
+        <p id="description" class="description text-center" >
+          Tell us about your favorite Digital Audio Workstation
+          (DAW)
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input 
+            id="name" 
+            type="text" 
+            required 
+            placeholder="Enter your name" 
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label> 
+          <input 
+            id="email" 
+            type="email" 
+            required 
+            placeholder="Enter your Email" 
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input 
+            id="number" 
+            type="number" 
+            required min="1" 
+            max="120" 
+            placeholder="Age"
+            class="form-control"
+            />
+        </div>
+        <div class="form-group">
+          <p>How long have you been producing music for?</p> 
+            <select id="dropdown" class="form-control">
+              <option value="" disabled selected>Select an Option</option>
+              <option value="1">Less than 1 year</option>
+              <option value="2">1-4 years</option>
+              <option value="3">4-10 years</option>
+              <option value="4">10+ years</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <p>How did you learn to produce music?</p>
+          <label>
+            <input 
+              id="self-taught" 
+              type="radio" 
+              name="education"
+              class="input-radio"
+              value="1"
+              /> Self-taught 
+          </label>
+          <label>
+            <input 
+              id="music-production-school" 
+              type="radio" 
+              name="education"
+              class="input-radio"
+              value="2"
+              /> Music production school
+          </label>
+          <label>
+            <input 
+              id="university" 
+              type="radio" 
+              name="education"
+              class="input-radio"
+              value="3"
+              /> University program
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="daw-dropdown-label">What is your favorite music DAW to use?</label> 
+            <select id="daw-dropdown" class="form-control">
+              <option value="" disabled selected>Select an Option</option>
+              <option value="1">FL Studio</option>
+              <option value="2">Abelton Live</option>
+              <option value="3">Logic Pro</option>
+              <option value="4">Pro Tools</option>
+              <option value="5">Cubase</option>
+              <option value="6">Reason</option>
+              <option value="7">Reaper</option>
+              <option value="8">Garageband</option>
+              <option value="9">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Why is it your favorite DAW?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="1"/> Comes with many high quality plugins 
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="2"/> Massive collection of built in instruments 
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="3"/> Amazing bank of built in samples 
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="4"/> Very stable, rarely crashes
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="5"/> Very powerful mixer channel
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="6"/> Low Latency – runs very smooth
+          </label>
+           <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="7"/> Quick sound sample editing, slicing, and tweaking
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="8"/> Reasonable price
+          </label>
+          <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="9"/> Fast workflow once understood
+          </label>
+           <label>
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              value="10"/> Easy to perform advanced automations
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Additonal comments on why this is your favorite DAW:</p>
+          <textarea 
+            id="comment-section" 
+            rows="3" 
+            cols="30" 
+            placeholder="Enter your comments here..."
+            class="input-textarea">
+          </textarea> 
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
